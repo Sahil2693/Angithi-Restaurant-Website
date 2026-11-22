@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Menu — Angithi, Rajkot</title>
+    <meta
+      name="description"
+      content="Charcoal kitchen in Rajkot. Dal cooked nine hours, kebabs on the sigdi, rotla and rotis made to order."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&family=Kalam:wght@400&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-head">
+      <a class="wordmark" href="index.html"
+        >Angithi <small lang="hi">अंगीठी</small></a
+      >
+      <input
+        type="checkbox"
+        class="nt"
+        id="nt"
+        aria-label="Open navigation"
+      /><label class="menu-toggle" for="nt">Menu</label>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html">Home</a
+        ><a href="menu.html" aria-current="page">Menu</a
+        ><a href="about.html">About</a><a href="gallery.html">Gallery</a
+        ><a href="contact.html">Contact</a
+        ><a class="btn" href="reservation.html">Reserve a table</a>
+      </nav>
+    </header>
+    <main id="main">
+      <div class="menu-wrap">
+        <div class="page-title"><h1>Menu</h1></div>
+        <div class="tools">
+          <div class="chips" role="radiogroup" aria-label="Filter by category">
+            <input
+              class="fr"
+              type="radio"
+              name="cat"
+              id="c-all"
+              checked
+            /><label class="chip" for="c-all">All</label
+            ><input class="fr" type="radio" name="cat" id="c-starter" /><label
+              class="chip"
+              for="c-starter"
+              >Starter</label
+            ><input class="fr" type="radio" name="cat" id="c-main" /><label
+              class="chip"
+              for="c-main"
+              >Main</label
+            ><input class="fr" type="radio" name="cat" id="c-breads" /><label
+              class="chip"
+              for="c-breads"
+              >Breads</label
+            ><input class="fr" type="radio" name="cat" id="c-dessert" /><label
+              class="chip"
+              for="c-dessert"
+              >Dessert</label
+            >
+          </div>
+        </div>
+        <p class="menu-note">
+          To order, call us or tell your server. Use your browser's find
+          (Ctrl+F) to search dishes.
+        </p>
+        <div class="list">
+          <article class="item" data-cat="Starter">
+            <figure
+              class="ph"
+              role="img"
+              aria-label="Paneer tikka"
+              style="background-image: url(images/dish-1.jpg)"
+            ></figure>
+            <h3>Paneer tikka</h3>
+            <span class="price">₹220</span>
+            <p>
+              Malai-marinated paneer, charred on the sigdi, with mint chutney.
+            </p>
+          </article>
+          <article class="item" data-cat="Starter">
+            <figure
+              class="ph"
+              role="img"
+              aria-label="Dahi ke kebab"
+              style="background-image: url(images/dish-2.jpg)"
+            ></figure>
+            <h3>Dahi ke kebab</h3>
+            <span class="price">₹190</span>
+            <p>
+              Hung curd and roasted chana flour, crisp outside, soft inside.
+            </p>
+          </article>
+          <article class="item" data-cat="Main">
+            <figure
+              class="ph"
+              role="img"
+              aria-label="Sev tamatar nu shaak"
+              style="background-image: url(images/dish-3.jpg)"
+            ></figure>
+            <h3>Sev tamatar nu shaak</h3>
+            <span class="price">₹210</span>
+            <p>
+              Kathiawadi style. Tomatoes, garlic oil and a handful of fresh sev
+              on top.
+            </p>
+          </article>
+          <article class="item" data-cat="Main">
+            <figure
+              class="ph"
+              role="img"
+              aria-label="Angithi dal"
+              style="background-image: url(images/dish-4.jpg)"
+            ></figure>
+            <h3>Angithi dal</h3>
+            <span class="price">₹240</span>
+            <p>
+              Black lentils cooked nine hours on low coal, finished with white
+              butter.
+            </p>
+          </article>
+          <article class="item" data-cat="Main">
+            <figure
+              class="ph"
+              role="img"
+              aria-label="Ringan no oro"
+              style="background-image: url(images/dish-5.jpg)"
+            ></figure>
+            <h3>Ringan no oro</h3>
+            <span class="price">₹260</span>
+            <p>
+              Brinjal roasted on open coal, mashed with green garlic and
+              chillies.
+            </p>
+          </article>
+          <article class="item" data-cat="Main">
+            <figure
+              class="ph"
+              role="img"
+              aria-label="Murgh seekh"
+              style="background-image: url(images/dish-6.jpg)"
+            ></figure>
+            <h3>Murgh seekh</h3>
+            <span class="price">₹340</span>
+            <p>
+              Hand-minced chicken, ginger and green chilli, rolled on a skewer.
+            </p>
+          </article>
+          <article class="item" data-cat="Breads">
+            <figure
+              class="ph"
+              role="img"
+              aria-label="Bajra rotla"
+              style="background-image: url(images/dish-7.jpg)"
+            ></figure>
+            <h3>Bajra rotla</h3>
+            <span class="price">₹40</span>
+            <p>Pearl millet, made to order, with jaggery and ghee.</p>
+          </article>
+          <article class="item" data-cat="Breads">
+            <figure
+              class="ph"
+              role="img"
+              aria-label="Tandoori roti"
+              style="background-image: url(images/dish-8.jpg)"
+            ></figure>
+            <h3>Tandoori roti</h3>
+            <span class="price">₹30</span>
+            <p>Whole wheat, from the clay oven.</p>
+          </article>
+          <article class="item" data-cat="Starter">
+            <figure
+              class="ph"
+              role="img"
+              aria-label="Lasaniya batata"
+              style="background-image: url(images/dish-9.jpg)"
+            ></figure>
+            <h3>Lasaniya batata</h3>
+            <span class="price">₹170</span>
+            <p>
+              Baby potatoes tossed in red garlic chutney, grilled until the
+              edges catch.
+            </p>
+          </article>
+          <article class="item" data-cat="Dessert">
+            <figure
+              class="ph"
+              role="img"
+              aria-label="Kulhad kulfi"
+              style="background-image: url(images/dish-10.jpg)"
+            ></figure>
+            <h3>Kulhad kulfi</h3>
+            <span class="price">₹110</span>
+            <p>Reduced milk and cardamom, set in a clay cup.</p>
+          </article>
+          <article class="item out" data-cat="Dessert">
+            <figure
+              class="ph"
+              role="img"
+              aria-label="Gajar halwa"
+              style="background-image: url(images/dish-11.jpg)"
+            ></figure>
+            <h3>Gajar halwa</h3>
+            <span class="price">₹130</span>
+            <p>Winter carrots and khoya, slow-cooked. Back in season.</p>
+            <span class="tag">Sold out</span>
+          </article>
+        </div>
+      </div>
+    </main>
+    <footer class="foot">
+      <div>
+        <h2>Angithi, Rajkot</h2>
+        <p>Dhebar Road, Rajkot, Gujarat</p>
+      </div>
+      <div>
+        <h2>Hours</h2>
+        <p>Dinner, every day, 7 pm to 11 pm</p>
+      </div>
+      <div>
+        <h2>Call or write</h2>
+        <p>+91 00000 00000<br />hello@angithi.example</p>
+      </div>
+    </footer>
+  </body>
+</html>

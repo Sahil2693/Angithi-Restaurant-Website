@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Orders — Angithi admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&family=Kalam:wght@400&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="shell">
+      <aside class="side">
+        <a class="wordmark" href="dashboard.html"
+          >Angithi <small>Kitchen ledger</small></a
+        >
+        <input
+          type="checkbox"
+          class="nt"
+          id="nt"
+          aria-label="Open navigation"
+        /><label class="side-toggle" for="nt">Menu</label>
+        <nav aria-label="Admin">
+          <a href="dashboard.html">Dashboard</a><a href="menu.html">Menu</a
+          ><a href="reservations.html">Reservations</a
+          ><a href="orders.html" aria-current="page">Orders</a
+          ><a href="settings.html">Settings</a>
+        </nav>
+        <a class="out" href="login.html">Log out</a>
+      </aside>
+      <main class="main" id="main">
+        <div class="head"><h1>Orders</h1></div>
+        <p class="side-note"></p>
+        <table class="ledger">
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Customer</th>
+              <th>Items</th>
+              <th class="num">Total</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Order ID">#101</td>
+              <td data-label="Customer">Aman</td>
+              <td data-label="Items">4 items</td>
+              <td class="num" data-label="Total">₹450</td>
+              <td data-label="Status">
+                <span class="stamp s-preparing">Preparing</span>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Order ID">#102</td>
+              <td data-label="Customer">Pooja</td>
+              <td data-label="Items">2 items</td>
+              <td class="num" data-label="Total">₹380</td>
+              <td data-label="Status">
+                <span class="stamp s-ready">Ready</span>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Order ID">#103</td>
+              <td data-label="Customer">Harsh</td>
+              <td data-label="Items">6 items</td>
+              <td class="num" data-label="Total">₹1120</td>
+              <td data-label="Status">
+                <span class="stamp s-served">Served</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Site settings — Angithi admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&family=Kalam:wght@400&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="shell">
+      <aside class="side">
+        <a class="wordmark" href="dashboard.html"
+          >Angithi <small>Kitchen ledger</small></a
+        >
+        <input
+          type="checkbox"
+          class="nt"
+          id="nt"
+          aria-label="Open navigation"
+        /><label class="side-toggle" for="nt">Menu</label>
+        <nav aria-label="Admin">
+          <a href="dashboard.html">Dashboard</a><a href="menu.html">Menu</a
+          ><a href="reservations.html">Reservations</a
+          ><a href="orders.html">Orders</a
+          ><a href="settings.html" aria-current="page">Settings</a>
+        </nav>
+        <a class="out" href="login.html">Log out</a>
+      </aside>
+      <main class="main" id="main">
+        <div class="head"><h1>Site settings</h1></div>
+        <p class="side-note">
+        </p>
+        <form
+          class="form"
+          style="max-width: 44rem"
+          action="settings.html#"
+          method="get"
+        >
+          <div class="field">
+            <label for="about">About text</label
+            ><textarea id="about" name="about">
+Angithi is a small kitchen in Rajkot cooking over charcoal.</textarea
+            >
+          </div>
+          <div class="row3" style="grid-template-columns: 1fr 1fr">
+            <div class="field">
+              <label for="phone">Phone</label
+              ><input id="phone" type="tel" value="+91 00000 00000" />
+            </div>
+            <div class="field">
+              <label for="email">Email</label
+              ><input id="email" type="email" value="hello@angithi.example" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="address">Address</label
+            ><input id="address" value="Add street address, Rajkot, Gujarat" />
+          </div>
+          <div class="field">
+            <label for="hours">Opening hours</label
+            ><input id="hours" value="Dinner, every day, 7 pm to 11 pm" />
+          </div>
+          <div class="field">
+            <label for="gf">Gallery images</label>
+            <div class="thumbs">
+              <figure>
+                <div
+                  class="ph"
+                  role="img"
+                  aria-label="Gallery photo 1"
+                  style="
+                    width: 6.5rem;
+                    height: 6.5rem;
+                    background-image: url(../images/gallery-1.jpg);
+                  "
+                ></div>
+                <a class="btn sm ghost" href="#">Remove</a>
+              </figure>
+              <figure>
+                <div
+                  class="ph"
+                  role="img"
+                  aria-label="Gallery photo 2"
+                  style="
+                    width: 6.5rem;
+                    height: 6.5rem;
+                    background-image: url(../images/gallery-2.jpg);
+                  "
+                ></div>
+                <a class="btn sm ghost" href="#">Remove</a>
+              </figure>
+              <figure>
+                <div
+                  class="ph"
+                  role="img"
+                  aria-label="Gallery photo 3"
+                  style="
+                    width: 6.5rem;
+                    height: 6.5rem;
+                    background-image: url(../images/gallery-3.jpg);
+                  "
+                ></div>
+                <a class="btn sm ghost" href="#">Remove</a>
+              </figure>
+            </div>
+            <input id="gf" type="file" accept="image/*" multiple />
+          </div>
+          <button class="btn" type="submit">Save changes</button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

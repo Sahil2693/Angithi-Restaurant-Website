@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Reserve a table — Angithi, Rajkot</title>
+    <meta
+      name="description"
+      content="Charcoal kitchen in Rajkot. Dal cooked nine hours, kebabs on the sigdi, rotla and rotis made to order."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&family=Kalam:wght@400&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-head">
+      <a class="wordmark" href="index.html"
+        >Angithi <small lang="hi">अंगीठी</small></a
+      >
+      <input
+        type="checkbox"
+        class="nt"
+        id="nt"
+        aria-label="Open navigation"
+      /><label class="menu-toggle" for="nt">Menu</label>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html">Home</a><a href="menu.html">Menu</a
+        ><a href="about.html">About</a><a href="gallery.html">Gallery</a
+        ><a href="contact.html">Contact</a
+        ><a class="btn" href="reservation.html">Reserve a table</a>
+      </nav>
+    </header>
+    <main id="main">
+      <div class="split wrap">
+        <div class="side-copy">
+          <h1>Reserve a table</h1>
+          <p>Dinner, every day, 7 pm to 11 pm.</p>
+          <p>
+            We hold your table for 15 minutes. If you are running late, call us.
+          </p>
+          <p>For parties above ten, please call instead.</p>
+          <span class="margin-note">tell us if it's a birthday</span>
+        </div>
+        <div>
+          <form class="form" action="reservation.html#thanks" method="get">
+            <div class="field">
+              <label for="name">Full name</label
+              ><input
+                id="name"
+                name="name"
+                autocomplete="name"
+                required
+                minlength="2"
+              />
+            </div>
+            <div class="field">
+              <label for="phone">Phone number</label
+              ><input
+                id="phone"
+                name="phone"
+                type="tel"
+                inputmode="numeric"
+                autocomplete="tel"
+                required
+                pattern="[6-9][0-9]{9}"
+                title="10-digit mobile number"
+                aria-describedby="ph-h"
+              />
+              <p class="help" id="ph-h">10-digit mobile number, no spaces.</p>
+            </div>
+            <div class="row3">
+              <div class="field">
+                <label for="date">Date</label
+                ><input id="date" name="date" type="date" required />
+              </div>
+              <div class="field">
+                <label for="time">Time</label
+                ><select id="time" name="time" required>
+                  <option value="">Choose</option>
+                  <option>7:00 pm</option>
+                  <option>7:30 pm</option>
+                  <option>8:00 pm</option>
+                  <option>8:30 pm</option>
+                  <option>9:00 pm</option>
+                  <option>9:30 pm</option>
+                  <option>10:00 pm</option>
+                  <option>10:30 pm</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="guests">Guests</label
+                ><select id="guests" name="guests" required>
+                  <option value="">Choose</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="note"
+                >Special request
+                <span style="font-weight: 400; color: var(--ink-soft)"
+                  >(optional)</span
+                ></label
+              ><textarea id="note" name="note"></textarea>
+            </div>
+            <button class="btn" type="submit">Confirm booking</button>
+          </form>
+          <div class="done" id="thanks" tabindex="-1">
+            <h2>Thank you.</h2>
+            <p>We have your request and will call to confirm your table.</p>
+            <a class="btn ghost" href="reservation.html">Book another table</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="foot">
+      <div>
+        <h2>Angithi, Rajkot</h2>
+        <p>Dhebar Road, Rajkot, Gujarat</p>
+      </div>
+      <div>
+        <h2>Hours</h2>
+        <p>Dinner, every day, 7 pm to 11 pm</p>
+      </div>
+      <div>
+        <h2>Call or write</h2>
+        <p>+91 00000 00000<br />hello@angithi.example</p>
+      </div>
+    </footer>
+  </body>
+</html>

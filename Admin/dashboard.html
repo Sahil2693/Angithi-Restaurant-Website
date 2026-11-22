@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Dashboard — Angithi admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&family=Kalam:wght@400&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="shell">
+      <aside class="side">
+        <a class="wordmark" href="dashboard.html"
+          >Angithi <small>Kitchen ledger</small></a
+        >
+        <input
+          type="checkbox"
+          class="nt"
+          id="nt"
+          aria-label="Open navigation"
+        /><label class="side-toggle" for="nt">Menu</label>
+        <nav aria-label="Admin">
+          <a href="dashboard.html" aria-current="page">Dashboard</a
+          ><a href="menu.html">Menu</a
+          ><a href="reservations.html">Reservations</a
+          ><a href="orders.html">Orders</a><a href="settings.html">Settings</a>
+        </nav>
+        <a class="out" href="login.html">Log out</a>
+      </aside>
+      <main class="main" id="main">
+        <div class="head"><h1>Dashboard</h1></div>
+        
+        <div class="figures">
+          <div><strong>6</strong><span>Reservations today</span></div>
+          <div><strong>3</strong><span>Orders in progress</span></div>
+          <div><strong>11</strong><span>Dishes on the menu</span></div>
+        </div>
+        <section class="sec">
+          <h2>Recent reservations</h2>
+          <table class="ledger">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>When</th>
+                <th>Guests</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Name">Riya Shah</td>
+                <td data-label="When">21 Aug, 8 pm</td>
+                <td data-label="Guests">4</td>
+                <td data-label="Status">
+                  <span class="stamp s-pending">Pending</span>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Name">Kunal Mehta</td>
+                <td data-label="When">21 Aug, 8:30 pm</td>
+                <td data-label="Guests">2</td>
+                <td data-label="Status">
+                  <span class="stamp s-approved">Approved</span>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Name">Dev Joshi</td>
+                <td data-label="When">22 Aug, 7:30 pm</td>
+                <td data-label="Guests">6</td>
+                <td data-label="Status">
+                  <span class="stamp s-pending">Pending</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="sec">
+          <h2>Recent orders</h2>
+          <table class="ledger">
+            <thead>
+              <tr>
+                <th>Order</th>
+                <th>Customer</th>
+                <th>Total</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Order">#101</td>
+                <td data-label="Customer">Aman</td>
+                <td data-label="Total">₹450</td>
+                <td data-label="Status">
+                  <span class="stamp s-preparing">Preparing</span>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Order">#102</td>
+                <td data-label="Customer">Pooja</td>
+                <td data-label="Total">₹380</td>
+                <td data-label="Status">
+                  <span class="stamp s-ready">Ready</span>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Order">#103</td>
+                <td data-label="Customer">Harsh</td>
+                <td data-label="Total">₹1120</td>
+                <td data-label="Status">
+                  <span class="stamp s-served">Served</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

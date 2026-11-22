@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Manage menu — Angithi admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&family=Kalam:wght@400&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="shell">
+      <aside class="side">
+        <a class="wordmark" href="dashboard.html"
+          >Angithi <small>Kitchen ledger</small></a
+        >
+        <input
+          type="checkbox"
+          class="nt"
+          id="nt"
+          aria-label="Open navigation"
+        /><label class="side-toggle" for="nt">Menu</label>
+        <nav aria-label="Admin">
+          <a href="dashboard.html">Dashboard</a
+          ><a href="menu.html" aria-current="page">Menu</a
+          ><a href="reservations.html">Reservations</a
+          ><a href="orders.html">Orders</a><a href="settings.html">Settings</a>
+        </nav>
+        <a class="out" href="login.html">Log out</a>
+      </aside>
+      <main class="main" id="main">
+        <div class="head">
+          <h1>Manage menu</h1>
+          <a class="btn" href="#add">Add dish</a>
+        </div>
+        
+        <table class="ledger">
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Name</th>
+              <th>Category</th>
+              <th class="num">Price</th>
+              <th>Available</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Image">
+                <div
+                  class="ph"
+                  role="img"
+                  aria-label="Paneer tikka"
+                  style="
+                    width: 44px;
+                    height: 44px;
+                    background-image: url(../images/dish-1.jpg);
+                  "
+                ></div>
+              </td>
+              <td data-label="Name">Paneer tikka</td>
+              <td data-label="Category">Starter</td>
+              <td class="num" data-label="Price">₹220</td>
+              <td data-label="Available">Yes</td>
+              <td data-label="Actions">
+                <div class="acts">
+                  <a
+                    class="btn sm ghost"
+                    href="#add"
+                    aria-label="Edit Paneer tikka"
+                    >Edit</a
+                  ><a
+                    class="btn sm ghost"
+                    href="#delete"
+                    aria-label="Delete Paneer tikka"
+                    >Delete</a
+                  >
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Image">
+                <div
+                  class="ph"
+                  role="img"
+                  aria-label="Dahi ke kebab"
+                  style="
+                    width: 44px;
+                    height: 44px;
+                    background-image: url(../images/dish-2.jpg);
+                  "
+                ></div>
+              </td>
+              <td data-label="Name">Dahi ke kebab</td>
+              <td data-label="Category">Starter</td>
+              <td class="num" data-label="Price">₹190</td>
+              <td data-label="Available">Yes</td>
+              <td data-label="Actions">
+                <div class="acts">
+                  <a
+                    class="btn sm ghost"
+                    href="#add"
+                    aria-label="Edit Dahi ke kebab"
+                    >Edit</a
+                  ><a
+                    class="btn sm ghost"
+                    href="#delete"
+                    aria-label="Delete Dahi ke kebab"
+                    >Delete</a
+                  >
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Image">
+                <div
+                  class="ph"
+                  role="img"
+                  aria-label="Sev tamatar nu shaak"
+                  style="
+                    width: 44px;
+                    height: 44px;
+                    background-image: url(../images/dish-3.jpg);
+                  "
+                ></div>
+              </td>
+              <td data-label="Name">Sev tamatar nu shaak</td>
+              <td data-label="Category">Main</td>
+              <td class="num" data-label="Price">₹210</td>
+              <td data-label="Available">Yes</td>
+              <td data-label="Actions">
+                <div class="acts">
+                  <a
+                    class="btn sm ghost"
+                    href="#add"
+                    aria-label="Edit Sev tamatar nu shaak"
+                    >Edit</a
+                  ><a
+                    class="btn sm ghost"
+                    href="#delete"
+                    aria-label="Delete Sev tamatar nu shaak"
+                    >Delete</a
+                  >
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Image">
+                <div
+                  class="ph"
+                  role="img"
+                  aria-label="Angithi dal"
+                  style="
+                    width: 44px;
+                    height: 44px;
+                    background-image: url(../images/dish-4.jpg);
+                  "
+                ></div>
+              </td>
+              <td data-label="Name">Angithi dal</td>
+              <td data-label="Category">Main</td>
+              <td class="num" data-label="Price">₹240</td>
+              <td data-label="Available">Yes</td>
+              <td data-label="Actions">
+                <div class="acts">
+                  <a
+                    class="btn sm ghost"
+                    href="#add"
+                    aria-label="Edit Angithi dal"
+                    >Edit</a
+                  ><a
+                    class="btn sm ghost"
+                    href="#delete"
+                    aria-label="Delete Angithi dal"
+                    >Delete</a
+                  >
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Image">
+                <div
+                  class="ph"
+                  role="img"
+                  aria-label="Ringan no oro"
+                  style="
+                    width: 44px;
+                    height: 44px;
+                    background-image: url(../images/dish-5.jpg);
+                  "
+                ></div>
+              </td>
+              <td data-label="Name">Ringan no oro</td>
+              <td data-label="Category">Main</td>
+              <td class="num" data-label="Price">₹260</td>
+              <td data-label="Available">Yes</td>
+              <td data-label="Actions">
+                <div class="acts">
+                  <a
+                    class="btn sm ghost"
+                    href="#add"
+                    aria-label="Edit Ringan no oro"
+                    >Edit</a
+                  ><a
+                    class="btn sm ghost"
+                    href="#delete"
+                    aria-label="Delete Ringan no oro"
+                    >Delete</a
+                  >
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Image">
+                <div
+                  class="ph"
+                  role="img"
+                  aria-label="Murgh seekh"
+                  style="
+                    width: 44px;
+                    height: 44px;
+                    background-image: url(../images/dish-6.jpg);
+                  "
+                ></div>
+              </td>
+              <td data-label="Name">Murgh seekh</td>
+              <td data-label="Category">Main</td>
+              <td class="num" data-label="Price">₹340</td>
+              <td data-label="Available">Yes</td>
+              <td data-label="Actions">
+                <div class="acts">
+                  <a
+                    class="btn sm ghost"
+                    href="#add"
+                    aria-label="Edit Murgh seekh"
+                    >Edit</a
+                  ><a
+                    class="btn sm ghost"
+                    href="#delete"
+                    aria-label="Delete Murgh seekh"
+                    >Delete</a
+                  >
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Image">
+                <div
+                  class="ph"
+                  role="img"
+                  aria-label="Bajra rotla"
+                  style="
+                    width: 44px;
+                    height: 44px;
+                    background-image: url(../images/dish-7.jpg);
+                  "
+                ></div>
+              </td>
+              <td data-label="Name">Bajra rotla</td>
+              <td data-label="Category">Breads</td>
+              <td class="num" data-label="Price">₹40</td>
+              <td data-label="Available">Yes</td>
+              <td data-label="Actions">
+                <div class="acts">
+                  <a
+                    class="btn sm ghost"
+                    href="#add"
+                    aria-label="Edit Bajra rotla"
+                    >Edit</a
+                  ><a
+                    class="btn sm ghost"
+                    href="#delete"
+                    aria-label="Delete Bajra rotla"
+                    >Delete</a
+                  >
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Image">
+                <div
+                  class="ph"
+                  role="img"
+                  aria-label="Tandoori roti"
+                  style="
+                    width: 44px;
+                    height: 44px;
+                    background-image: url(../images/dish-8.jpg);
+                  "
+                ></div>
+              </td>
+              <td data-label="Name">Tandoori roti</td>
+              <td data-label="Category">Breads</td>
+              <td class="num" data-label="Price">₹30</td>
+              <td data-label="Available">Yes</td>
+              <td data-label="Actions">
+                <div class="acts">
+                  <a
+                    class="btn sm ghost"
+                    href="#add"
+                    aria-label="Edit Tandoori roti"
+                    >Edit</a
+                  ><a
+                    class="btn sm ghost"
+                    href="#delete"
+                    aria-label="Delete Tandoori roti"
+                    >Delete</a
+                  >
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Image">
+                <div
+                  class="ph"
+                  role="img"
+                  aria-label="Lasaniya batata"
+                  style="
+                    width: 44px;
+                    height: 44px;
+                    background-image: url(../images/dish-9.jpg);
+                  "
+                ></div>
+              </td>
+              <td data-label="Name">Lasaniya batata</td>
+              <td data-label="Category">Starter</td>
+              <td class="num" data-label="Price">₹170</td>
+              <td data-label="Available">Yes</td>
+              <td data-label="Actions">
+                <div class="acts">
+                  <a
+                    class="btn sm ghost"
+                    href="#add"
+                    aria-label="Edit Lasaniya batata"
+                    >Edit</a
+                  ><a
+                    class="btn sm ghost"
+                    href="#delete"
+                    aria-label="Delete Lasaniya batata"
+                    >Delete</a
+                  >
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Image">
+                <div
+                  class="ph"
+                  role="img"
+                  aria-label="Kulhad kulfi"
+                  style="
+                    width: 44px;
+                    height: 44px;
+                    background-image: url(../images/dish-10.jpg);
+                  "
+                ></div>
+              </td>
+              <td data-label="Name">Kulhad kulfi</td>
+              <td data-label="Category">Dessert</td>
+              <td class="num" data-label="Price">₹110</td>
+              <td data-label="Available">Yes</td>
+              <td data-label="Actions">
+                <div class="acts">
+                  <a
+                    class="btn sm ghost"
+                    href="#add"
+                    aria-label="Edit Kulhad kulfi"
+                    >Edit</a
+                  ><a
+                    class="btn sm ghost"
+                    href="#delete"
+                    aria-label="Delete Kulhad kulfi"
+                    >Delete</a
+                  >
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Image">
+                <div
+                  class="ph"
+                  role="img"
+                  aria-label="Gajar halwa"
+                  style="
+                    width: 44px;
+                    height: 44px;
+                    background-image: url(../images/dish-11.jpg);
+                  "
+                ></div>
+              </td>
+              <td data-label="Name">Gajar halwa</td>
+              <td data-label="Category">Dessert</td>
+              <td class="num" data-label="Price">₹130</td>
+              <td data-label="Available">No</td>
+              <td data-label="Actions">
+                <div class="acts">
+                  <a
+                    class="btn sm ghost"
+                    href="#add"
+                    aria-label="Edit Gajar halwa"
+                    >Edit</a
+                  ><a
+                    class="btn sm ghost"
+                    href="#delete"
+                    aria-label="Delete Gajar halwa"
+                    >Delete</a
+                  >
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="modal" id="add" role="dialog" aria-labelledby="dh">
+          <div class="panel">
+            <form class="form" action="menu.html#" method="get">
+              <h2 id="dh">Dish details</h2>
+              <div class="field">
+                <label for="f-name">Name</label
+                ><input id="f-name" name="name" required />
+              </div>
+              <div class="field">
+                <label for="f-cat">Category</label
+                ><select id="f-cat" name="cat">
+                  <option>Starter</option>
+                  <option>Main</option>
+                  <option>Breads</option>
+                  <option>Dessert</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="f-price">Price in rupees</label
+                ><input
+                  id="f-price"
+                  name="price"
+                  type="number"
+                  min="1"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="f-desc">Description</label
+                ><textarea id="f-desc" name="desc"></textarea>
+              </div>
+              <div class="field">
+                <label for="f-img">Photo</label
+                ><input id="f-img" type="file" accept="image/*" />
+              </div>
+              <label class="chk"
+                ><input type="checkbox" checked /> Available</label
+              >
+              <div class="acts" style="margin-top: 1rem">
+                <button class="btn" type="submit">Save dish</button
+                ><a class="btn ghost" href="#">Cancel</a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal" id="delete" role="dialog" aria-labelledby="xh">
+          <div class="panel">
+            <h2 id="xh">Delete this dish?</h2>
+            <p>It will be removed from the menu.</p>
+            <div class="acts">
+              <a class="btn" href="#">Delete</a
+              ><a class="btn ghost" href="#">Keep it</a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Reservations — Angithi admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&family=Kalam:wght@400&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="shell">
+      <aside class="side">
+        <a class="wordmark" href="dashboard.html"
+          >Angithi <small>Kitchen ledger</small></a
+        >
+        <input
+          type="checkbox"
+          class="nt"
+          id="nt"
+          aria-label="Open navigation"
+        /><label class="side-toggle" for="nt">Menu</label>
+        <nav aria-label="Admin">
+          <a href="dashboard.html">Dashboard</a><a href="menu.html">Menu</a
+          ><a href="reservations.html" aria-current="page">Reservations</a
+          ><a href="orders.html">Orders</a><a href="settings.html">Settings</a>
+        </nav>
+        <a class="out" href="login.html">Log out</a>
+      </aside>
+      <main class="main" id="main">
+        <div class="head">
+          <h1>Reservations</h1>
+          <div class="acts">
+            <label for="day" style="position: absolute; left: -999px"
+              >Filter by date</label
+            ><input id="day" class="search" type="date" /><button
+              class="btn sm ghost"
+              type="button"
+            >
+              All dates
+            </button>
+          </div>
+        </div>
+        <p class="side-note">
+          
+        </p>
+        <table class="ledger">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Phone</th>
+              <th>Date and time</th>
+              <th>Guests</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Name">Riya Shah</td>
+              <td data-label="Phone">98765 43210</td>
+              <td data-label="Date and time">21 Aug, 8 pm</td>
+              <td data-label="Guests">4</td>
+              <td data-label="Status">
+                <span class="stamp s-pending">Pending</span>
+              </td>
+              <td data-label="Actions">
+                <div class="acts">
+                  <button class="btn sm" type="button">Approve</button
+                  ><button class="btn sm ghost" type="button">Cancel</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Name">Kunal Mehta</td>
+              <td data-label="Phone">98250 11223</td>
+              <td data-label="Date and time">21 Aug, 8:30 pm</td>
+              <td data-label="Guests">2</td>
+              <td data-label="Status">
+                <span class="stamp s-approved">Approved</span>
+              </td>
+              <td data-label="Actions">
+                <div class="acts">
+                  <button class="btn sm ghost" type="button">Cancel</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Name">Dev Joshi</td>
+              <td data-label="Phone">99090 44556</td>
+              <td data-label="Date and time">22 Aug, 7:30 pm</td>
+              <td data-label="Guests">6</td>
+              <td data-label="Status">
+                <span class="stamp s-pending">Pending</span>
+              </td>
+              <td data-label="Actions">
+                <div class="acts">
+                  <button class="btn sm" type="button">Approve</button
+                  ><button class="btn sm ghost" type="button">Cancel</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Name">Nisha Parmar</td>
+              <td data-label="Phone">97144 33221</td>
+              <td data-label="Date and time">23 Aug, 9 pm</td>
+              <td data-label="Guests">3</td>
+              <td data-label="Status">
+                <span class="stamp s-cancelled">Cancelled</span>
+              </td>
+              <td data-label="Actions">
+                <div class="acts"><span class="hint">—</span></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+    </div>
+  </body>
+</html>

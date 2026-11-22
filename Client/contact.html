@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact — Angithi, Rajkot</title>
+    <meta
+      name="description"
+      content="Charcoal kitchen in Rajkot. Dal cooked nine hours, kebabs on the sigdi, rotla and rotis made to order."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&family=Kalam:wght@400&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-head">
+      <a class="wordmark" href="index.html"
+        >Angithi <small lang="hi">अंगीठी</small></a
+      >
+      <input
+        type="checkbox"
+        class="nt"
+        id="nt"
+        aria-label="Open navigation"
+      /><label class="menu-toggle" for="nt">Menu</label>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html">Home</a><a href="menu.html">Menu</a
+        ><a href="about.html">About</a><a href="gallery.html">Gallery</a
+        ><a href="contact.html" aria-current="page">Contact</a
+        ><a class="btn" href="reservation.html">Reserve a table</a>
+      </nav>
+    </header>
+    <main id="main">
+      <div class="split wrap">
+        <div class="side-copy">
+          <h1>Contact</h1>
+          <p>Dhebar Road, Rajkot, Gujarat</p>
+          <p>+91 00000 00000 · hello@angithi.example</p>
+          <p>Dinner, every day, 7 pm to 11 pm</p>
+          <p>
+            <a href="reservation.html"
+              >Booking a table? Use the reservation form.</a
+            >
+          </p>
+        </div>
+        <div>
+          <form class="form" action="contact.html#sent" method="get">
+            <div class="field">
+              <label for="n">Your name</label
+              ><input
+                id="n"
+                name="name"
+                autocomplete="name"
+                required
+                minlength="2"
+              />
+            </div>
+            <div class="field">
+              <label for="m">Email</label
+              ><input
+                id="m"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="t">Message</label
+              ><textarea
+                id="t"
+                name="message"
+                required
+                minlength="5"
+              ></textarea>
+            </div>
+            <button class="btn" type="submit">Send message</button>
+          </form>
+          <div class="done" id="sent" tabindex="-1">
+            <h2>Message sent.</h2>
+            <p>Thank you. We usually reply within a day.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="foot">
+      <div>
+        <h2>Angithi, Rajkot</h2>
+        <p>Dhebar Road, Rajkot, Gujarat</p>
+      </div>
+      <div>
+        <h2>Hours</h2>
+        <p>Dinner, every day, 7 pm to 11 pm</p>
+      </div>
+      <div>
+        <h2>Call or write</h2>
+        <p>+91 00000 00000<br />hello@angithi.example</p>
+      </div>
+    </footer>
+  </body>
+</html>
